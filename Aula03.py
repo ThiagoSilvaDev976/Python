@@ -1,4 +1,5 @@
 #Manipulando Strings 
+
 #Strings de uma linha:
 a = "eu sou uma string"
 print(a)
@@ -47,4 +48,5 @@ f = "abcdef"
 print(f[3:]) #resultará em 'def'
 
 #Valores negativos "coisa de corno, mas vai que..."
-f
+f = "abcdef ghijkl"
+print() #lembrar de ver vídeo
