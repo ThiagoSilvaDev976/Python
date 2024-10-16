@@ -53,7 +53,7 @@ print(tangerina)
 print(mexerica)
 print(bergamota)
 
-#Lista "Tupla":
+#Lista:
 Lifepaths = ['nômade', 'marginal', 'corporativo']
 print(Lifepaths)
 
