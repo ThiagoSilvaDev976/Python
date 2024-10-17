@@ -50,3 +50,37 @@ print(f[3:]) #resultará em 'def'
 #Valores negativos "coisa de corno, mas vai que..."
 f = "abcdef ghijkl"
 print() #lembrar de ver vídeo
+
+#Modificando Strings
+
+#Torna o texto Maiúsculo:
+a = "Hello, World!"
+print(a.upper())
+
+#Torna o texto minúsculo
+a = "Hello, World!"
+print(a.lower())
+
+#Removendo espaços: ínicio e final do texto
+a = " borboleta "
+print(a.strip())
+
+#Realocação de texto:
+a = "Trocadilho"
+print(a.replace("ilho", "alho")) #troca o 1º termo pelo 2º
+
+#Separando/dividindo textos:
+a = "Hello, World!"
+print(a.split(",")) #resultará em ['Hello', ' World!']
+
+#Associando/Ligando Strings sem espaço entre elas:
+a = "alho"
+b = "poró"
+c = a + b
+print(c) #"c" será = "alhoporó"
+
+#Com espaço ou hífen, seria:
+a = "alho"
+b = "poró"
+c = a + "-" + b
+print(c) #daí resultará em "alho-poró"
