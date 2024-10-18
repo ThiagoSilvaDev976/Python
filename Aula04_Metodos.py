@@ -25,9 +25,9 @@ print(txt)
 ''' \' ou \" Citação única	
     \\	Barra invertida	
     \n	Nova linha	
-    \r	Carriage Return	
+    \r	Coloca o texto numa nova linha	
     \t	Adiciona 1 tab(4 espaços)
     \b	Apaga a letra anterior a ela, pode ser usada mais de uma vez	
-    \f	Form Feed	
-    \ooo	Octal value	
-    \xhh	Hex value '''
+    \f	Quebra de Página	
+    \ooo	Valor Octal	
+    \xhh	Valor Hexadecimal '''
