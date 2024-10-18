@@ -47,7 +47,7 @@ print(txt.expandtabs(10))   #H         e         l         l         o
 #O find() diz em qual valor da string sua palavra está.
 txt = "O arco-íris surgiu após a chuva, pintando o céu com suas cores."
 x = txt.find("arco-íris")
-print(x) #2
+print(x) #2 - se não houver,    -1
 
 #Formatando com format()
 txt = "Custa {preço:.2f} reais!"
@@ -59,3 +59,43 @@ data = {'nome': 'Alice', 'idade': 25}
 # Formatando a string usando format_map()
 frase = "Meu nome é {nome} e tenho {idade} anos.".format_map(data)
 print(frase) #Meu nome é Alice e tenho 25 anos.
+
+#O index() diz em qual valor da string sua palavra está.
+txt = "O arco-íris surgiu após a chuva, pintando o céu com suas cores."
+x = txt.find("arco-íris")
+print(x) #2 - se não houver, dá erro de traceback
+
+#isalnum() "is alphaumerics ?" (a-z) (0-9)
+txt = "Cyberpunk2077"
+cod = "çç´´~~"
+x = txt.isalnum()
+y = cod.isalnum()
+print(x, y) #True, False
+
+#Variações da função anterior
+'''
+isalnum()	True se todos os caracteres forem alfanuméricos
+isalpha()	True se todos os caracteres estiverem no alfabeto
+isascii()	True se todos os caracteres forem ascii (não são ascii, acentos, cedilha, tils entre outros)
+isdecimal()	True se todos os caracteres forem decimais
+isdigit()	True se todos os caracteres forem dígitos
+'''
+#Validando se uma string pode ser um identificador:
+a = "MyFolder"
+b = "Demo002"
+c = "2bring"
+d = "my demo"
+print(a.isidentifier()) #True
+print(b.isidentifier()) #True
+print(c.isidentifier()) #False
+print(d.isidentifier()) #False
+
+#Mais variações
+'''
+islower()       True se todos os caracteres forem minúsculos
+isnumeric()     True se todos os caracteres forem numéricos
+isprintable()   True se todos os caracteres forem imprimíveis
+isspace()       True se todos os caracteres forem espaços em branco
+istitle()       True se a string seguir as regras de um título
+isupper()       True se todos os caracteres forem maiúsculos
+'''
