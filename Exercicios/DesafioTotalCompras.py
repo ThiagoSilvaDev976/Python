@@ -5,7 +5,6 @@
 produtos = {'Shampoo': 19.90, 'Creme': 12.80,'Gel': 9.30,'Perfume': 49.90,'Sabonete':35.10,'Desodorante':14.90,'Hidratante':12.90,'Colônia': 59.90}
 
 #2ª Fase - Criando o Pedido
-
 #2.1 - exibindo a lista de produtos:
 print('Produtos Disponíveis:')
 for produto, valor in produtos.items():
