@@ -99,3 +99,52 @@ isspace()       True se todos os caracteres forem espaços em branco
 istitle()       True se a string seguir as regras de um título
 isupper()       True se todos os caracteres forem maiúsculos
 '''
+#Juntando itens de uma lista em uma única string:
+lista = ('azedo', 'doce', 'salgado')
+x = '-'.join(lista) #o join() colocará o hífen entre cada item da lista.
+
+#ljust() // rjust()
+'''O método ljust() em Python é usado para justificar uma string à esquerda em um campo de um tamanho especificado. Ele preenche o lado direito da string original com um caractere (por padrão, um espaço; porém pode ser personalizado) até que a string atinja o comprimento desejado.'''
+txt = "Carlos"
+x = txt.ljust(10, "O")
+print(x) #vai add 'carlos' que já tem 6 caracteres, e add 4 'O', completando os 10cctrs inseridos.
+
+#lstrip() // rstrip()
+'''lstrip = left strip, irá remover todos os espaços antes do início do texto, na string. rstrip = right strip, irá remover todos os espaços antes do início do texto, na string. '''
+txt = "   banana   " #só o espaço a esquerda é removido
+x = txt.lstrip()
+print("of all fruits", x, "is my favorite")
+
+#strip()
+txt = "   banana   "
+x = txt.lstrip()
+print("of all fruits", x, "is my favorite") #banana
+
+#maketrans() 
+'''usado para substituir palavras(de mesmo tamanho) ou letras'''
+txt = "Ol% Sam!"
+x = str.maketrans("%", "á")
+print(txt.translate(x)) #Olá Sam
+
+#partition()
+'''
+Pesquisa pela palavra escolhida "ingá" e retorna uma tupla com três elementos:
+1 - tudo antes de "ingá"
+2 - o "ingá"
+3 - tudo depois de "ingá"
+'''
+txt = "Na barranceira do rio, o ingá se debruçou. E a fruta que era madura a correnteza levou"
+x = txt.rpartition("ingá")
+print(x)
+
+#replace()
+'''troca uma palavra por outra na string'''
+txt = 'Entre o mar e o amanhecer, alga marinha, vá na maresia...'
+x = txt.replace('amanhecer', 'entardecer')
+print(x)
+
+#rfind() // rindex()
+'''Pesquisa na string por um valor especificado e retorna a última posição (nº da string) onde foi encontrado'''
+txt = 'Você sabe que eu só penso em você, Você diz que vive pensando em mim, Pode ser, se é assim, Você tem que largar a mão do não'
+x = txt.rfind('Você')
+print(x)
