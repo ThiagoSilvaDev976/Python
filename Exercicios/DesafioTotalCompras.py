@@ -2,16 +2,7 @@
 '''O desafio consiste em somar os itens de uma lista de compras'''
 
 #1ª Fase - Criar uma Lista
-produtos = {
-    'Shampoo': 19.90,
-    'Creme': 12.80,
-    'Gel': 9.30,
-    'Perfume': 49.90,
-    'Sabonete':35.10,
-    'Desodorante':14.90,
-    'Hidratante':12.90,
-    'Colônia': 59.90
-    }
+produtos = {'Shampoo': 19.90, 'Creme': 12.80,'Gel': 9.30,'Perfume': 49.90,'Sabonete':35.10,'Desodorante':14.90,'Hidratante':12.90,'Colônia': 59.90}
 
 #2ª Fase - Criando o Pedido
 
